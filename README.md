@@ -1,7 +1,5 @@
-# Proyek Analisis Data: E-Commerce Analysis
+# Proyek Analisis Data: E-Commerce Analysis ✨
 - **Nama:** Toni Andreas Susanto
-- **Email:** toniandreassusanto1209@gmail.com
-- **ID Dicoding:** toni_andreas_s
 
 ## Deskripsi File 
 1. `asset` : Berisi foto untuk profil dalam website streamlit.
@@ -17,6 +15,7 @@
 Analisis ini menggunakan dataset berupa kumpulan data publik dari sebuah e-commerce di Brazil, Olist Store. Dataset ini mencakup informasi dari 100 ribu pesanan yang dilakukan dari tahun 2016 hingga 2018 melalui berbagai platform penjualan di Brazil, berikut sumbernya [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Data ini memberikan informasi pesanan dari berbagai dimensi: mulai dari status pesanan, harga, pembayaran, kinerja pengiriman, lokasi pelanggan, atribut produk, hingga ulasan yang ditulis oleh pelanggan.
 
 Olist adalah toko departemen terbesar di pasar e-commerce Brazil yang menghubungkan usaha kecil dari seluruh Brazil ke berbagai saluran penjualan dengan satu kontrak. Penjual dapat menjual produk mereka melalui Olist Store dan mengirim langsung ke pelanggan menggunakan mitra logistik Olist. Data ini telah di-anonimkan, sehingga tidak mengandung informasi rahasia dan referensi ke perusahaan serta mitra telah diganti dengan nama-nama rumah besar dari Game of Thrones. Oleh karena itu, saya ingin melakukan analisis
+
 
 ## Pertanyaan Bisnis
 1. Bagaimana performa penjualan dan revenue perusahaan dalam beberapa bulan terakhir?
@@ -35,3 +34,15 @@ Untuk menjawab berbagai pertanyaan bisnis tersebut maka dalam projek ini melalui
 6. Visualization & Explanatory Analysis
 7. Conclusion
 8. Membuat dan Mendeploy program menjadi Dashboard. 
+
+## Setup environment
+```
+conda create --name bad_python python=3.9
+conda activate bad_python
+pip install -r requirements.txt
+```
+
+## Run steamlit app
+```
+streamlit run streamlit.py
+```
