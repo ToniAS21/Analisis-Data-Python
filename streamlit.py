@@ -28,15 +28,7 @@ st.write("""Analisis ini menggunakan dataset berupa kumpulan data publik dari se
          berbagai platform penjualan di Brazil, berikut sumbernya 
          https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce. Data ini memberikan informasi pesanan dari berbagai 
          dimensi: mulai dari status pesanan, harga, pembayaran, kinerja  pengiriman, lokasi pelanggan, atribut produk, 
-         hingga ulasan yang ditulis oleh pelanggan.""")
-
-st.write("""
-         Olist adalah toko departemen terbesar di pasar e-commerce Brazil yang menghubungkan usaha kecil dari seluruh Brazil ke 
-         berbagai saluran penjualan dengan satu kontrak. Penjual dapat menjual produk mereka melalui Olist Store dan mengirim 
-         langsung ke pelanggan menggunakan mitra logistik Olist. Data ini telah di-anonimkan, sehingga tidak mengandung informasi 
-         rahasia dan referensi ke perusahaan serta mitra telah diganti dengan nama-nama rumah besar dari Game of Thrones. Oleh karena itu, 
-         saya ingin melakukan analisis.""")
-         
+         hingga ulasan yang ditulis oleh pelanggan.""")         
 
 st.write('## Business Questions')
 st.write("""
