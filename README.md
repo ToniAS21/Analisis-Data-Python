@@ -1,5 +1,6 @@
 # Proyek Analisis Data: E-Commerce Analysis ✨
-- **Nama:** Toni Andreas Susanto
+Saya **Toni Andreas Susanto** mempersembahkan Dashboard Analysis E-Commerce, sebuah alat yang memudahkan menganalisis data perusahaan
+E-Commerce dengan visualisasi yang mendalam dan interaktif. Mari menemukan berbagai insight dari perusahaan kami.
 
 ## Deskripsi File 
 1. `asset` : Berisi foto untuk profil dalam website streamlit.
