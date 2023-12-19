@@ -26,7 +26,7 @@ st.write('# Dashboard Analysis E-Commerce')
 st.write("""Analisis ini menggunakan dataset berupa kumpulan data publik dari sebuah e-commerce di Brazil, Olist Store. 
          Dataset ini mencakup informasi dari 100 ribu pesanan yang dilakukan dari tahun 2016 hingga 2018 melalui 
          berbagai platform penjualan di Brazil, berikut sumbernya 
-         https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce. Data ini memberikan informasi pesanan dari berbagai 
+         [https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce](Brazilian E-Commerce). Data ini memberikan informasi pesanan dari berbagai 
          dimensi: mulai dari status pesanan, harga, pembayaran, kinerja  pengiriman, lokasi pelanggan, atribut produk, 
          hingga ulasan yang ditulis oleh pelanggan.""")         
 
