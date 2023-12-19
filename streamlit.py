@@ -27,18 +27,7 @@ st.write("""Analisis ini menggunakan dataset berupa kumpulan data publik dari se
          Dataset ini mencakup informasi dari 100 ribu pesanan yang dilakukan dari tahun 2016 hingga 2018 melalui 
          berbagai platform penjualan di Brazil, https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce.""")         
 
-st.write('## Business Questions')
-st.write("""
-         1. Bagaimana Performa Penjualan dan Revenue Perusahaan dalam Beberapa Bulan Terakhir?
-         2. Kapan Terakhir Pelanggan Melakukan Transaksi (***Recency***)?
-         3. Seberapa Sering Seorang Pelanggan Melakukan Pembelian dalam Beberapa Bulan Terakhir (***Frequency***)?
-         4. Berapa Banyak Uang yang Dihabiskan Pelanggan dalam Beberapa Bulan Terakhir (***Monetary***)?
-         5. Bagaimana Persebaran Revenue antar States?
-         """)
-
 # ---------------------------------------------------- ROW 2 ---------------------------------------------
-
-st.write('## Visualization & Explanatory Analysis')
 
 st.write('### 1: Bagaimana Performa Penjualan dan Revenue Perusahaan dalam Beberapa Bulan Terakhir?')
 
@@ -76,12 +65,6 @@ line_chart1 = px.line(data_frame=monthly_orders_df,
         title="Total Revenue per Month")
 col4.plotly_chart(line_chart1, use_container_width=True)
 
-st.write("""Berdasarkan visualisasi di atas, kita dapat melihat bahwa jumlah order terbanyak terjadi pada bulan November 2017. 
-         Selain itu, kita juga dapat melihat adanya penurunan jumlah order yang cukup signifikan pada bulan Agustus ke September.
-         Tentunya penurunan tersebut akan berdampak pada total revenue yang diperoleh perusahaan. Oleh karena itu, perlu dicari 
-         tahu penyebab terjadinya penurunan tersebut dengan mempertimbangkan banyak hal, seperti keberadaan kompetitor, campaign, dll.""")
-
-
 
 # ---------------------------------------------------- ROW 3 ---------------------------------------------
 
@@ -117,10 +100,6 @@ plot_recency = px.bar(data_frame=rfm_df.sort_values(by="recency", ascending=True
 
 st.plotly_chart(plot_recency, use_container_width=True)
 
-st.write("""Dari visualisasi data di atas, kita dapat melihat 5 pelanggan terbaik berdasarkan indikator Recency 
-         (Terdapat pelanggan yang baru saja bertransaksi, terakhir 1 hari dst).""")
-
-
 
 
 # ---------------------------------------------------- ROW 4 ---------------------------------------------
@@ -135,9 +114,6 @@ plot_freq = px.bar(data_frame=rfm_df.sort_values(by="frequency", ascending=False
                               'frequency': 'Frequency'},
                       title="Best Customer Based on RFM Parameters (customer_id) - Frequency")
 st.plotly_chart(plot_freq, use_container_width=True)
-st.write("""Dari visualisasi data di atas, kita dapat melihat 5 pelanggan terbaik berdasarkan indikator Frequency, 
-         tetapi ternyata pelanggan kita hanya beli sekali kemudian tidak membeli lagi (frequency = 1), 
-         ini bisa menjadi bahan evaluasi untuk perbaikan perusahaan.""")
 
 
 # ---------------------------------------------------- ROW 5 ---------------------------------------------
@@ -153,9 +129,7 @@ plot_mone = px.bar(data_frame=rfm_df.sort_values(by="monetary", ascending=False)
                       title="Best Customer Based on RFM Parameters (customer_id) - Monetary")
 
 st.plotly_chart(plot_mone, use_container_width=True)
-st.write("""Dari visualisasi data di atas, kita dapat melihat 5 pelanggan terbaik berdasarkan indikator Monetary 
-         (seberapa banyak mengeluarkan uang), sebaiknya pelanggan yang berbelanja dalam jumlah besar mesti 
-         diberikan rewards dsb agar kembali berbelanja alias loyal.""")
+
 
 # ---------------------------------------------------- ROW 6 ---------------------------------------------
 
@@ -190,34 +164,10 @@ plot_map.update_layout(margin={"r":1,"t":0,"l":0,"b":0})
 
 st.write("**Distribution Revenue by Every District**")
 st.plotly_chart(plot_map)
-st.write("Berdasarkan grafik di atas, Total Reveneu States terbesar ada di negara bagian (states) São Paulo dan Minas Gerais.")
+
 
 # ---------------------------------------------------- ROW 8 ------------------------------
-st.write("## Conclusion")
-st.write("""
-         1.	Bagaimana performa penjualan dan revenue perusahaan dalam beberapa bulan terakhir?
-             > Secara trend total penjualan dan revenue meningka, yang puncaknya pada November 2017. Namun, setelah bulan Agustus terjadi 
-            penurunan siginfikan jadi beberapa bulan terakhir mengalami pelambatan. 
-        """)
-
-st.write("""
-         2.	Pertanyaan 2: Kapan terakhir pelanggan melakukan transaksi (***Recency***)?
-             > Terdapat pelanggan aktif pada hari tersebut (recency = 0) dan yang urutan 5 terbaik  (recency = 18 days) artinya pelanggan aktifnya relatif sedikit. 
-        """)
-
-st.write("""
-         3.	Seberapa sering seorang pelanggan melakukan pembelian dalam beberapa bulan terakhir (***Frequency***)?
-             > Tingkat Frequency customer berbelanja hanya 1 kali, ini mengindikasikan tidak ada pelanggan yang beli lebih dari 1 kali. """)
-            
-st.write("""
-         4.	Berapa banyak uang yang dihabiskan pelanggan dalam beberapa bulan terakhir (***Monetary***)?
-             > Terdapat pelanggan yang berbelanja dalam terbesar, yakni 13.666,408 Real Brazil, tetapi posisi 2 hingga 5 hanya sekitar 7.000 an Real Brazil. 
-             Meskipun besar tetapi transaksi hanya dilakukan satu kali oleh setiap pelanggan. 
-            """)
-            
-st.write("""
-         5.	Bagaimana Persebaran Revenue antar states ?
-             > Total Revenue States terbesar ada di negara bagian (states) São Paulo dan Minas Gerais.""")
+st.write("### Conclusion")
             
 st.write("""
 **Kesimpulan Keseluruhan :**
