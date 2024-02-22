@@ -47,3 +47,6 @@ pip install -r requirements.txt
 ```
 streamlit run streamlit.py
 ```
+
+## Output
+https://e-commerce-python.streamlit.app/
